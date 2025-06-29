@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+  
+   position:relative;
+   animation: has  2s linear  infinite ;
+ }
+ @keyframes has{
+    0%{
+        background-color: orange;
+        left: 200px;
+        top: 0px;
+    }
+    25%{
+        background-color: red;
+        left: 200px;
+        top: 200px;
+    } 
+     50%{
+        background-color: green;
+        left:0px;
+        top: 200px;
+    } 
+     75%{
+        background-color: yellow;
+        left: 0px;
+        top: 0px;
+    }  
+    100%{
+        background-color: blue;
+        left: 200px;
+        top: 0px;
+    }
+ }
+</style>
+<body>
+    <div class="box">
+
+    </div>
+
+    
+</body>
+</html>
