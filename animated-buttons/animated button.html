@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>form1</title>
+
+<style>
+/*
+body{
+		background-image:url(n3.jpg),linear-gradient(to right,green,blue,pink);
+		background-size:100%;
+		background-blend-mode:multiply;
+		
+}*/
+
+.button{
+		border:1px solid #c0392b;
+		color:#c0392b;
+		text-decoration:none;
+		padding:8px 12px;
+		display:inline-block;
+		font-family:arial;
+		font-size:16px;
+		position:relative;
+		transition:all .5s ease;
+	
+}
+.button:hover{
+				color:white;
+				
+}
+.button::after{
+				content:"";
+				background:#c0392b;
+				position:absolute;
+				top:0;
+				left:0px;
+				width:0%;
+				height:100%;
+				z-index:-1;
+				transition:all 0.5s ease;
+}
+
+.button:hover::after{
+				width:100%;
+			
+}
+
+</style>	
+
+</head>
+<body>
+
+<a href="" class="button">Confirm</a>
+
+
+
+
+</body>
+<html>
