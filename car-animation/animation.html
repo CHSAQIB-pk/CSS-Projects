@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Car</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url(street.avif);
+        background-size: 40vw;
+      }
+      .car1 {
+        width: 12vw;
+        position: fixed;
+        top: 12vw;
+        left: -25%;
+        animation: car1 5s infinite ease-in-out;
+      }
+      .car2 {
+        width: 20vw;
+        position: fixed;
+        top: 15vw;
+        right: -25%;
+        animation: car2 5s infinite ease-in-out;
+      }
+      .bike {
+        width: 15vw;
+        position: fixed;
+        bottom: -1%;
+        left: -25%;
+        animation: bike 4s 2s infinite ease-in;
+      }
+      .police {
+        width: 200px;
+        position: fixed;
+        bottom: 20px;
+        left: -25%;
+        animation: police 4s 4s infinite ease;
+      }
+      .airplane {
+        width: 10vw;
+        position: fixed;
+        right: -25%;
+        top: 0;
+        animation: airplane 4s infinite ease-in-out;
+      }
+      @keyframes car1 {
+        0% {
+          left: -25%;
+        }
+        25% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          left: 40%;
+        }
+        75% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          transform: rotateY(0deg);
+        }
+      }
+      @keyframes car2 {
+        0% {
+          right: -25%;
+        }
+        25% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          right: 40%;
+        }
+        75% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          transform: rotateY(0deg);
+        }
+      }
+      @keyframes bike {
+        0% {
+        }
+        25% {
+          transform: rotate(0deg);
+        }
+        40% {
+          transform: rotate(-30deg);
+        }
+        70% {
+          transform: rotate(0deg);
+        }
+        100% {
+          left: 100%;
+        }
+      }
+      @keyframes police {
+        0% {
+        }
+        100% {
+          left: 100%;
+        }
+      }
+      @keyframes airplane {
+        0% {
+          right: -25%;
+        }
+        90% {
+          transform: rotateX(720deg);
+        }
+        100% {
+          right: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="car-removebg-preview.png" alt="" class="car1" />
+    <img src="car2.png" alt="" class="car2" />
+    <img src="bike.png" alt="" class="bike" />
+    <img src="police.png" alt="" class="police" />
+    <img src="airplane.png" alt="" class="airplane" />
+  </body>
+</html>
