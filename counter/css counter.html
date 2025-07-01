@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            counter-reset: abc;
+            background-color: beige;
+            font-family: arial;
+        }
+
+        .heading b {
+            display: block;
+            text-align: center;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            font-size: 5rem;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 5px red;
+            background-color: rgba(56, 126, 187, 0.385);
+            border-radius: 100px;
+        }
+
+        h1 {
+            counter-reset: subabc;
+        }
+
+        h1::before {
+            content: counter(abc) ".  ";
+            counter-increment: abc;
+            color: rgba(255, 0, 0, 0.577);
+        }
+
+        h2::before {
+            content: counter(abc) ".  " counter(subabc) ".  ";
+            counter-increment: subabc;
+            color: purple;
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+            padding: 20px;
+            text-align: center;
+            color: ;
+        }
+
+        p {
+            font-size: 1.3rem;
+            text-align: justify;
+        }
+
+        div {
+            border-radius: 100px;
+        }
+
+        .box1 {
+            background-color: rgba(255, 166, 0, 0.601);
+            padding: 30px;
+        }
+
+        .box2 {
+            background-color: rgba(255, 255, 0, 0.448);
+            padding: 30px;
+        }
+
+        .box3 {
+            background-color: rgba(165, 42, 42, 0.579);
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading"><b>css counter's</b></div>
+
+    <div class="box1">
+        <h1>html & css</h1>
+        <h2>html</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel temporibus corporis perferendis aliquam a
+            expedita repellat obcaecati minima asperiores dolores, fuga dolor voluptate eligendi nemo! Facere itaque
+            amet
+            excepturi officiis hic eum culpa, dignissimos mollitia nisi, eveniet odit explicabo, vel dolore ab obcaecati
+            aut
+            ratione ad cumque adipisci iste.</p>
+        <h2>css</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem dolorem,
+            eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!</p>
+    </div>
+
+
+    <div class="box2">
+        <h1>java script & php</h1>
+        <h2>java script</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel temporibus corporis perferendis aliquam a
+            expedita repellat obcaecati minima asperiores dolores, fuga dolor voluptate eligendi nemo! Facere itaque
+            amet
+            excepturi officiis hic eum culpa, dignissimos mollitia nisi, eveniet odit explicabo, vel dolore ab obcaecati
+            aut
+            ratione ad cumque adipisci iste.</p>
+        <h2>php</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem dolorem,
+            eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!</p>
+    </div>
+
+
+
+    <div class="box3">
+        <h1>bootstrap & react js</h1>
+        <h2>bootstrap</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio vel temporibus corporis perferendis aliquam a
+            expedita repellat obcaecati minima asperiores dolores, fuga dolor voluptate eligendi nemo! Facere itaque
+            amet
+            excepturi officiis hic eum culpa, dignissimos mollitia nisi, eveniet odit explicabo, vel dolore ab obcaecati
+            aut
+            ratione ad cumque adipisci iste.</p>
+        <h2>react js</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem dolorem,
+            eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, deserunt. Ex magni quidem
+            dolorem, eveniet
+            mollitia, suscipit voluptas quisquam, alias minima quas deleniti libero nemo nihil perferendis. Voluptate,
+            eos
+            voluptatibus!</p>
+    </div>
+</body>
+
+</html>
