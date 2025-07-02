@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 300px;
+            height: 350px;
+            /* background-color: aqua; */
+            /* border: 2px solid red; */
+            position: absolute;
+            perspective: 800px;
+        }
+        .data{
+            width: 100%;
+            aspect-ratio: 1;
+            /* background-color: pink; */
+            position: absolute;
+            transition: all 2s;
+            transform-style: preserve-3d;
+
+        }
+        .card:hover .data{
+            transform: rotatey(180deg);
+        }
+        .front,.back{
+            width: 100%;
+            aspect-ratio: 1;
+            position: absolute;
+            /* background-color: orange; */
+            backface-visibility: hidden;
+           
+        }
+        .back{
+            /* background-color: blueviolet; */
+            transform: rotatey(180deg);
+        }
+        img{
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 100%;
+           
+        }
+        .shadow{
+            width: 220px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: rgb(181, 175, 175);
+            position: absolute;
+            top: 60%;
+            z-index: -3;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="data">
+            <div class="front">
+             <img src="p1.jpg" alt="">
+            </div>
+            <div class="back">
+                <img src="p2.jpg" alt="">
+            </div>
+           
+        </div>
+    </div>
+    <div class="shadow"></div>
+</body>
+</html>
